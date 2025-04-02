@@ -1,0 +1,259 @@
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+    margin-top: 50px;
+}
+
+.index {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+.france {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("leonard-cotte-c1Jp-fo53U8-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+.italy {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("engjell-gjepali-M0OIyN5u8ZM-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+.spain {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("dimitry-b-uDl5opHop7E-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+.portugal {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("paula-sotomayor-1nmvU_SpGuM-unsplash.jpg");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+    }
+
+header h1 {
+    color: white;
+}
+
+header h3 {
+    color: white;
+}
+
+img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+h4 {
+    color: grey;
+    font-size: 12px;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 30px;
+}
+
+.intro.italy.france.spain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 30px;
+}
+
+.routes {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 30px;
+}
+
+.tiles img {
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.tiles img:hover {
+    max-width: 110%;
+}
+
+@media (max-width: 600px) {
+    .tiles {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .intro {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    iframe {
+            width: 500px !important;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+    }
+    .recommendations {
+        grid-template-columns: 1fr !important;
+        justify-content: center;
+    }
+    .recommendation-tile {
+        grid-template-columns: 1fr !important;
+        justify-content: center;
+    }
+    .recommendations .tiles {
+        grid-template-columns: 1fr !important;
+        justify-content: center;
+    }
+    .gallery-tile {
+        grid-template-columns: 1fr !important;
+        justify-content: center;
+    }
+    .gallery-pics {
+        grid-template-columns: 1fr !important;
+        justify-content: center;
+    }
+}
+
+.recommendations {
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px 0;
+    }
+
+.recommendations .tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.gallery {
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px 0;
+}
+
+.gallery-pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 30px;
+  }
+
+.gallery img {
+    width: 100%; 
+    max-width: 350px; 
+    border-radius: 10px;
+    object-fit: cover; 
+    margin: 20px;
+}
+
+.gallery-tile img:hover {
+    width: 120%; 
+    max-width: 350px; 
+    border-radius: 10px;
+    object-fit: cover; 
+    margin: 20px;
+}
+
+.recommendation-tile,
+.gallery-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.song {
+    text-align: center;
+    max-width: 1200px;
+    margin: 50px 0;
+}
+
+footer {
+    background-color: #59442F;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 20px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 30px;
+}
+
+footer h4 {
+    color: white;
+}
+
+footer p {
+    color: white;
+    font-size: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.flag {
+    max-width: 24px;
+    border-radius: 0px;
+}
+
+.netlify-logo {
+    max-width: 40px;
+    max-height: 40px;
+    vertical-align: middle;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 20px; 
+    justify-content: left;
+    align-items: center;
+  }
